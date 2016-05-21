@@ -12,6 +12,11 @@
 		5A34BF451CF1185700B08AD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A34BF431CF1185700B08AD4 /* Main.storyboard */; };
 		5A34BF471CF1185700B08AD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A34BF461CF1185700B08AD4 /* Assets.xcassets */; };
 		5A34BF4A1CF1185700B08AD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A34BF481CF1185700B08AD4 /* LaunchScreen.storyboard */; };
+		5A34BF581CF1196800B08AD4 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A34BF531CF1196800B08AD4 /* TFHpple.m */; };
+		5A34BF591CF1196800B08AD4 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A34BF551CF1196800B08AD4 /* TFHppleElement.m */; };
+		5A34BF5A1CF1196800B08AD4 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A34BF571CF1196800B08AD4 /* XPathQuery.m */; };
+		5A34BF5D1CF11A9A00B08AD4 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A34BF5C1CF11A9A00B08AD4 /* libxml2.2.tbd */; };
+		5A34BF5F1CF11AA500B08AD4 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A34BF5E1CF11AA500B08AD4 /* libxml2.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,15 @@
 		5A34BF461CF1185700B08AD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A34BF491CF1185700B08AD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A34BF4B1CF1185700B08AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A34BF511CF1196700B08AD4 /* Fun with TFHpple-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fun with TFHpple-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A34BF521CF1196800B08AD4 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		5A34BF531CF1196800B08AD4 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		5A34BF541CF1196800B08AD4 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		5A34BF551CF1196800B08AD4 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		5A34BF561CF1196800B08AD4 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		5A34BF571CF1196800B08AD4 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		5A34BF5C1CF11A9A00B08AD4 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		5A34BF5E1CF11AA500B08AD4 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A34BF5F1CF11AA500B08AD4 /* libxml2.tbd in Frameworks */,
+				5A34BF5D1CF11A9A00B08AD4 /* libxml2.2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +54,8 @@
 		5A34BF331CF1185700B08AD4 = {
 			isa = PBXGroup;
 			children = (
+				5A34BF5E1CF11AA500B08AD4 /* libxml2.tbd */,
+				5A34BF5C1CF11A9A00B08AD4 /* libxml2.2.tbd */,
 				5A34BF3E1CF1185700B08AD4 /* Fun with TFHpple */,
 				5A34BF3D1CF1185700B08AD4 /* Products */,
 			);
@@ -60,8 +78,23 @@
 				5A34BF461CF1185700B08AD4 /* Assets.xcassets */,
 				5A34BF481CF1185700B08AD4 /* LaunchScreen.storyboard */,
 				5A34BF4B1CF1185700B08AD4 /* Info.plist */,
+				5A34BF5B1CF1198300B08AD4 /* TFHpple */,
+				5A34BF511CF1196700B08AD4 /* Fun with TFHpple-Bridging-Header.h */,
 			);
 			path = "Fun with TFHpple";
+			sourceTree = "<group>";
+		};
+		5A34BF5B1CF1198300B08AD4 /* TFHpple */ = {
+			isa = PBXGroup;
+			children = (
+				5A34BF521CF1196800B08AD4 /* TFHpple.h */,
+				5A34BF531CF1196800B08AD4 /* TFHpple.m */,
+				5A34BF541CF1196800B08AD4 /* TFHppleElement.h */,
+				5A34BF551CF1196800B08AD4 /* TFHppleElement.m */,
+				5A34BF561CF1196800B08AD4 /* XPathQuery.h */,
+				5A34BF571CF1196800B08AD4 /* XPathQuery.m */,
+			);
+			name = TFHpple;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A34BF591CF1196800B08AD4 /* TFHppleElement.m in Sources */,
 				5A34BF421CF1185700B08AD4 /* ViewController.swift in Sources */,
+				5A34BF5A1CF1196800B08AD4 /* XPathQuery.m in Sources */,
+				5A34BF581CF1196800B08AD4 /* TFHpple.m in Sources */,
 				5A34BF401CF1185700B08AD4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +285,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "Fun with TFHpple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pavley.Fun-with-TFHpple";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fun with TFHpple/Fun with TFHpple-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -260,10 +301,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = "Fun with TFHpple/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pavley.Fun-with-TFHpple";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fun with TFHpple/Fun with TFHpple-Bridging-Header.h";
 			};
 			name = Release;
 		};
