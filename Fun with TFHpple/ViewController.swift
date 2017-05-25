@@ -13,6 +13,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let data = try? Data(contentsOf: URL(string: "http://www.pavley.com")!)
+        let doc = TFHpple(htmlData: data)
+        
+        if let elements = doc?.search(withXPathQuery: "//p") as? [TFHppleElement] {
+            for element in elements {
+                print("------")
+                print(element.content)
+            }
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
